@@ -1,0 +1,591 @@
+$nav: #748DA6;
+$little-nav: #9CB4CC;
+$basic: #D3CEDF;
+$pink: #eb9fa4;
+
+
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.nav {
+    div {
+        a:hover span {
+            color: #eb9fa4;
+        }
+    }
+}
+
+
+.work {
+    width: 60%;
+    height: 100%;
+
+    ul {
+        display: block;
+
+        li {
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 20px 0;
+            border-bottom: 1px solid $little-nav;
+
+            &:hover {
+                box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.1);
+            }
+        }
+    }
+
+    .port {
+        margin-top: 20px;
+        color: $nav;
+
+        font: {
+            size: 40px;
+            weight: bold;
+        }
+
+        &:hover {
+            color: crimson;
+        }
+    }
+
+    .date {
+        margin-top: 10px;
+        color: $pink;
+        padding: 10px;
+
+        font: {
+            size: 25px;
+            weight: bold;
+        }
+    }
+
+    p {
+        color: $nav;
+
+        font: {
+            size: 30px;
+            weight: bold;
+        }
+    }
+}
+
+
+
+@media screen and (max-width:576px) {
+
+    /* 모바일 */
+    body {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .nav {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        background-color: $nav;
+        text-align: center;
+
+        span {
+            color: white;
+            font-weight: bold;
+        }
+
+    }
+
+    .intro {
+        width: 100%;
+        height: 100%;
+
+
+
+        h1:nth-child(1) {
+            text-align: center;
+            color: $little-nav;
+
+            font: {
+                size: 50px;
+                weight: bold;
+            }
+        }
+
+        h1:nth-child(2) {
+            text-align: center;
+            color: $pink;
+
+            font: {
+                size: 50px;
+                weight: bold;
+            }
+
+        }
+
+        .number {
+            text-align: center;
+            color: $pink;
+            padding-bottom: 30px;
+
+            font: {
+                size: 30px;
+                weight: bold;
+            }
+
+            em {
+                color: $nav;
+            }
+        }
+
+        .author {
+            width: 100%;
+            height: 25%;
+            text-align: center;
+
+            h2 {
+
+                font: {
+                    size: 1.4rem;
+                }
+            }
+
+            h3 {
+                color: $pink;
+            }
+
+            border: {
+                top: 2px solid $little-nav;
+                bottom: 2px solid $little-nav;
+                radius: 6px;
+            }
+        }
+    }
+
+    .work {
+        width: 100%;
+        height: 100%;
+
+        ul {
+            display: block;
+
+            li {
+                display: block;
+                width: 100%;
+                height: 100%;
+                padding: 20px 0;
+                border-bottom: 1px solid $little-nav;
+
+                &:hover {
+                    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.1);
+                }
+            }
+        }
+
+        .port {
+            margin-top: 20px;
+            color: $nav;
+
+            font: {
+                size: 40px;
+                weight: bold;
+            }
+
+            &:hover {
+                color: crimson;
+            }
+        }
+
+        .date {
+            margin-top: 10px;
+            color: $pink;
+            padding: 10px;
+
+            font: {
+                size: 25px;
+                weight: bold;
+            }
+        }
+
+        p {
+            color: $nav;
+
+            font: {
+                size: 30px;
+                weight: bold;
+            }
+        }
+
+
+    }
+}
+
+@media screen and (min-width: 557px) {
+    /* 태블릿 */
+
+    .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+
+    }
+
+    .nav {
+        width: 4%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: $nav;
+        text-align: center;
+
+        span {
+
+            color: white;
+            font-weight: bold;
+        }
+
+        div {
+
+            &:nth-child(1),
+            &:nth-child(2) {
+                margin: 30px 0;
+                padding: 20px 0;
+
+                border: {
+                    bottom: 0.5px solid $basic;
+                }
+
+            }
+
+        }
+
+        div:nth-child(3) {
+            position: relative;
+            bottom: -62%;
+        }
+    }
+
+    .intro {
+        width: 40%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        h1:nth-child(1) {
+            text-align: center;
+            color: $little-nav;
+
+            font: {
+                size: 35px;
+                weight: bold;
+            }
+        }
+
+        h1:nth-child(2) {
+            text-align: center;
+            color: $pink;
+
+            font: {
+                size: 30px;
+                weight: bold;
+            }
+
+        }
+
+        .number {
+            text-align: center;
+            color: $pink;
+
+            font: {
+                size: 30px;
+                weight: bold;
+            }
+
+            em {
+                color: $nav;
+            }
+        }
+
+
+        .author {
+            width: 20%;
+            height: 20%;
+            position: sticky;
+            flex-direction: column;
+            justify-content: center;
+            display: flex;
+            bottom: 10px;
+            left: 100px;
+
+            font: {
+                weight: bold;
+            }
+
+            border: {
+                top: 1px solid $nav;
+                bottom: 1px solid $nav;
+            }
+
+            .h2base {
+                display: block;
+                height: 5%;
+                font-size: 30px;
+            }
+
+            h3 {
+                color: $pink;
+            }
+        }
+    }
+
+    .work {
+        width: 60%;
+        height: 100%;
+        margin: auto;
+
+        ul {
+            display: block;
+
+            li {
+                display: block;
+                width: 100%;
+                height: 100%;
+                padding: 20px 0;
+                border-bottom: 1px solid $little-nav;
+
+                &:hover {
+                    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.1);
+                }
+            }
+        }
+
+        .port {
+            margin-top: 20px;
+            color: $nav;
+
+            font: {
+                size: 35px;
+                weight: bold;
+            }
+
+            &:hover {
+                color: crimson;
+            }
+        }
+
+        .date {
+            margin-top: 10px;
+            color: $pink;
+            padding: 10px;
+
+            font: {
+                size: 20px;
+                weight: bold;
+            }
+        }
+
+        p {
+            color: $nav;
+
+            font: {
+                size: 30px;
+                weight: bold;
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: 996px) {
+    /* 컴퓨터 */
+
+    .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+
+    }
+
+    .nav {
+        width: 3%;
+        height: 100vw;
+        display: flex;
+        flex-direction: column;
+        background-color: $nav;
+        text-align: center;
+
+        span {
+
+            color: white;
+            font-weight: bold;
+        }
+
+        div {
+
+            &:nth-child(1),
+            &:nth-child(2) {
+                margin: 30px 0;
+                padding: 20px 0;
+
+                border: {
+                    bottom: 0.5px solid $basic;
+                }
+
+            }
+
+        }
+
+        div:nth-child(3) {
+            position: relative;
+            top: 5%;
+            margin: 30px 0;
+            padding: 20px 0;
+
+            border: {
+                bottom: 0.5px solid $basic;
+            }
+        }
+    }
+
+    .intro {
+        width: 30%;
+        height: 100%;
+        position: relative;
+
+        h1:nth-child(1) {
+            text-align: center;
+            color: $little-nav;
+
+            font: {
+                size: 50px;
+                weight: bold;
+            }
+        }
+
+        h1:nth-child(2) {
+            text-align: center;
+            color: $pink;
+
+            font: {
+                size: 50px;
+                weight: bold;
+            }
+
+        }
+
+        .number {
+            text-align: center;
+            color: $pink;
+
+            font: {
+                size: 30px;
+                weight: bold;
+            }
+
+            em {
+                color: $nav;
+            }
+        }
+
+
+        .author {
+            width: 20%;
+            height: 20%;
+            position: fixed;
+            flex-direction: column;
+            justify-content: center;
+            display: flex;
+            bottom: 10px;
+            left: 100px;
+
+            font: {
+                weight: bold;
+            }
+
+            border: {
+                top: 1px solid $nav;
+                bottom: 1px solid $nav;
+            }
+
+            .h2base {
+                display: block;
+                height: 5%;
+                font-size: 30px;
+            }
+
+            h3 {
+                color: $pink;
+            }
+        }
+    }
+
+    .work {
+        width: 60%;
+        height: 100vh;
+        overflow: scroll;
+
+        ul {
+            display: block;
+
+            li {
+                display: block;
+                width: 100%;
+                height: 100%;
+                padding: 20px 0;
+                border-bottom: 1px solid $little-nav;
+
+                &:hover {
+                    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.1);
+                }
+            }
+        }
+
+        .port {
+            margin-top: 20px;
+            color: $nav;
+
+            font: {
+                size: 40px;
+                weight: bold;
+            }
+
+            &:hover {
+                color: crimson;
+            }
+        }
+
+        .date {
+            margin-top: 10px;
+            color: $pink;
+            padding: 10px;
+
+            font: {
+                size: 25px;
+                weight: bold;
+            }
+        }
+
+        p {
+            color: $nav;
+
+            font: {
+                size: 30px;
+                weight: bold;
+            }
+        }
+    }
+
+}
+
+//----swiper--
